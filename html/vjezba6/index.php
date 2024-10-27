@@ -8,17 +8,17 @@
 <body>
 	<form action="" method="post">
 		<label for="broj1">Upiši prvi broj*</label>
-		<input type="number" name="broj1" required>
-		<label for="broj2" required>Upiši drugi broj*</label>
-		<input type="number" name="broj2" required>
-		<label for="add" required>+</label>
-		<input type="radio" value="add" name="operacija" checked>
-		<label for="sub" required>-</label>
-		<input type="radio" value="sub" name="operacija">
-		<label for="multiply" required>*</label>
-		<input type="radio" value="multiply" name="operacija">
-		<label for="div" required>/</label>
-		<input type="radio" value="div" name="operacija">
+		<input type="number" required name="broj1" required>
+		<label for="broj2">Upiši drugi broj*</label>
+		<input type="number" required name="broj2" required>
+		<label for="add">+</label>
+		<input type="radio" required value="add" name="operacija" checked>
+		<label for="sub">-</label>
+		<input type="radio" required value="sub" name="operacija">
+		<label for="multiply">*</label>
+		<input type="radio" required value="multiply" name="operacija">
+		<label for="div">/</label>
+		<input type="radio" required value="div" name="operacija">
 		<input type="submit">
 	</form>	
 </body>
