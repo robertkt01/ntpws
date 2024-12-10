@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Primjer HTML5 dokumenta.">
+    <meta name="keywords" content="HTML5, dijakritički znakovi, meta oznake, mobilni uređaji">
+    <meta name="author" content="Robert">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #004080;
+            text-align: center;
+            color: white;
+            padding: 10px 0;
+        }
+
+        header img {
+            width: 100%;
+            height: auto;
+            max-height: 400px; /* Ograničenje visine slike */
+        }
+
+        nav {
+            background-color: #0074D9;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        footer a {
+            color: #0074D9;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+            margin: 0 5px;
+            vertical-align: middle;
+        }
+
+        article {
+            margin-bottom: 20px;
+        }
+
+        h1, h2 {
+            color: #004080;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        figure {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        figure img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ccc;
+        }
+
+        figcaption {
+            font-style: italic;
+            color: #555;
+            margin-top: 5px;
+        }
+
+        @media (max-width: 768px) {
+            nav a {
+                font-size: 16px;
+                margin: 0 10px;
+            }
+
+            main {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="banner.jpg" alt="Zaglavlje stranice">
+    </header>
+    <nav>
+        <a href="#pocetna">Početna stranica</a>
+        <a href="news.html">Novosti</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="#o-nama">O nama</a>
+        <a href="#galerija">Galerija</a>
+    </nav>
+    <main>
+        <h1>Dobrodošli na našu stranicu!</h1>
+        <article>
+            <h2>Kako tehnologija mijenja svakodnevni život</h2>
+            <p>
+                Tehnologija je postala ključni dio naših života. Od pametnih telefona do umjetne inteligencije, 
+                svijet se neprestano mijenja i prilagođava novim inovacijama.
+            </p>
+            <p>
+                Jedan od najvećih utjecaja tehnologije je digitalna transformacija, koja omogućuje bržu 
+                i učinkovitiju komunikaciju, rad i zabavu.
+            </p>
+            <p>
+                U budućnosti očekujemo daljnje napretke, uključujući autonomna vozila, proširenu stvarnost 
+                i personalizirane digitalne usluge.
+            </p>
+            <figure>
+                <img src="utjecaj-tehnologije.jpg" alt="Primjer utjecaja tehnologije">
+                <figcaption>Slika koja prikazuje tehnološke inovacije u svakodnevnom životu.</figcaption>
+            </figure>
+        </article>
+    </main>
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="https://www.linkedin.com" target="_blank"><img src="linkedin-icon.png" alt="Twitter"></a>
+        </div>
+        <div>
+            <p style="text-center">Copyright © 2024 Robert.</p>
+            <a href="https://www.github.com/robertkt01"><img src="github-icon.png" alt="GitHub" style="width: 20px; height: 20px; vertical-align: middle;"></a>
+        </div>
+    </footer>
+</body>
+</html>

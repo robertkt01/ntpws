@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Primjer HTML5 dokumenta.">
+    <meta name="keywords" content="HTML5, dijakritički znakovi, meta oznake, mobilni uređaji">
+    <meta name="author" content="Robert">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #004080;
+            text-align: center;
+            color: white;
+            padding: 10px 0;
+        }
+
+        header img {
+            width: 100%;
+            height: auto;
+            max-height: 400px; /* Ograničenje visine slike */
+        }
+
+        nav {
+            background-color: #0074D9;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        footer a {
+            color: #0074D9;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+            margin: 0 5px;
+            vertical-align: middle;
+        }
+
+        .articles {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .article {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #f9f9f9;
+        }
+
+        .article img {
+            width: 100%;
+            height: auto;
+        }
+
+        .article-content {
+            padding: 15px;
+        }
+
+        .article-content h2 {
+            margin-top: 0;
+            font-size: 20px;
+            color: #004080;
+        }
+
+        .article-content p {
+            margin: 10px 0;
+        }
+
+        .article-content a {
+            color: #0074D9;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .article-content a:hover {
+            text-decoration: underline;
+        }
+
+        h1, h2 {
+            color: #004080;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        figure {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        figure img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ccc;
+        }
+
+        figcaption {
+            font-style: italic;
+            color: #555;
+            margin-top: 5px;
+        }
+
+        @media (max-width: 768px) {
+            nav a {
+                font-size: 16px;
+                margin: 0 10px;
+            }
+
+            main {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="banner.jpg" alt="Zaglavlje stranice">
+    </header>
+    <nav>
+        <a href="#pocetna">Početna stranica</a>
+        <a href="#novosti">Novosti</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="#o-nama">O nama</a>
+        <a href="#galerija">Galerija</a>
+    </nav>
+    <main>
+        <h1>Članci</h1>
+        <section class="articles">
+            <article class="article">
+                <a href="#clanak1"><img src="thumbnail1.jpg" alt="Thumbnail za članak 1"></a>
+                <div class="article-content">
+                    <h2><a href="#clanak1">Naslov članka 1</a></h2>
+                    <p>Kratki opis članka 1. Saznajte više o ovoj zanimljivoj temi.</p>
+                    <p><strong>Datum objave:</strong> 10. prosinca 2024.</p>
+                    <a href="#clanak1">Više o članku...</a>
+                </div>
+            </article>
+            <article class="article">
+                <a href="#clanak2"><img src="thumbnail2.jpg" alt="Thumbnail za članak 2"></a>
+                <div class="article-content">
+                    <h2><a href="#clanak2">Naslov članka 2</a></h2>
+                    <p>Kratki opis članka 2. Pronađite detalje o ovoj temi.</p>
+                    <p><strong>Datum objave:</strong> 9. prosinca 2024.</p>
+                    <a href="#clanak2">Više o članku...</a>
+                </div>
+            </article>
+            <article class="article">
+                <a href="#clanak3"><img src="thumbnail3.jpg" alt="Thumbnail za članak 3"></a>
+                <div class="article-content">
+                    <h2><a href="#clanak3">Naslov članka 3</a></h2>
+                    <p>Kratki opis članka 3. Otkrijte sve što trebate znati.</p>
+                    <p><strong>Datum objave:</strong> 8. prosinca 2024.</p>
+                    <a href="#clanak3">Više o članku...</a>
+                </div>
+            </article>
+            <article class="article">
+                <a href="#clanak4"><img src="thumbnail4.webp" alt="Thumbnail za članak 4"></a>
+                <div class="article-content">
+                    <h2><a href="#clanak4">Naslov članka 4</a></h2>
+                    <p>Kratki opis članka 4. Pročitajte najnovije informacije.</p>
+                    <p><strong>Datum objave:</strong> 7. prosinca 2024.</p>
+                    <a href="#clanak4">Više o članku...</a>
+                </div>
+            </article>
+            <article class="article">
+                <a href="#clanak5"><img src="thumbnail5.jpg" alt="Thumbnail za članak 5"></a>
+                <div class="article-content">
+                    <h2><a href="#clanak5">Naslov članka 5</a></h2>
+                    <p>Kratki opis članka 5. Pronađite više informacija.</p>
+                    <p><strong>Datum objave:</strong> 6. prosinca 2024.</p>
+                    <a href="#clanak5">Više o članku...</a>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="https://www.linkedin.com" target="_blank"><img src="linkedin-icon.png" alt="Twitter"></a>
+        </div>
+        <div>
+            <p style="text-center">Copyright © 2024 Robert.</p>
+            <a href="https://www.github.com/robertkt01"><img src="github-icon.png" alt="GitHub" style="width: 20px; height: 20px; vertical-align: middle;"></a>
+        </div>
+    </footer>
+</body>
+</html>
