@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Primjer HTML5 dokumenta.">
+    <meta name="keywords" content="HTML5, dijakritički znakovi, meta oznake, mobilni uređaji">
+    <meta name="author" content="Robert">
+    <title>Kontakt</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #004080;
+            text-align: center;
+            color: white;
+            padding: 10px 0;
+        }
+
+        header img {
+            width: 100%;
+            height: auto;
+            max-height: 400px; /* Ograničenje visine slike */
+        }
+
+        nav {
+            background-color: #0074D9;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        form label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        form input, form select, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        form textarea {
+            resize: vertical;
+        }
+
+        form button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #004080;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #003060;
+        }
+
+        .map {
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .map iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 400px;
+            border: 0;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        footer a {
+            color: #0074D9;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+            margin: 0 5px;
+            vertical-align: middle;
+        }
+
+        article {
+            margin-bottom: 20px;
+        }
+
+        h1, h2 {
+            color: #004080;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        figure {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        figure img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ccc;
+        }
+
+        figcaption {
+            font-style: italic;
+            color: #555;
+            margin-top: 5px;
+        }
+
+        @media (max-width: 768px) {
+            nav a {
+                font-size: 16px;
+                margin: 0 10px;
+            }
+
+            main {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="banner.jpg" alt="Zaglavlje stranice">
+    </header>
+    <nav>
+        <a href="#pocetna">Početna</a>
+        <a href="#novosti">Novosti</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="#o-nama">O nama</a>
+        <a href="#galerija">Galerija</a>
+    </nav>
+    <main>
+        <h1>O Nama</h1>
+        <p>
+            Naša organizacija ima misiju unaprijediti razumijevanje i očuvanje prirodnog svijeta. 
+            Fokusirani smo na edukaciju, istraživanje i zaštitu okoliša. Naši projekti pokrivaju širok spektar 
+            područja, od lokalnih inicijativa za očuvanje do globalnih kampanja za zaštitu ugroženih vrsta.
+        </p>
+        <p>
+            Strastveni smo prema pružanju podrške zajednici kroz edukaciju i sudjelovanje u raznim 
+            aktivnostima. S vjerom da mali koraci mogu dovesti do velikih promjena, pozivamo sve da se 
+            pridruže našoj misiji i postanu dio pozitivne promjene.
+        </p>
+        <p>
+            Pogledajte naš video kako biste saznali više o našim aktivnostima, vrijednostima i ciljevima. 
+            Video prikazuje neke od naših ključnih trenutaka, postignuća i izazova s kojima smo se susreli.
+        </p>
+        <video controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        </video>
+    </main>
+</body>
+</html>
