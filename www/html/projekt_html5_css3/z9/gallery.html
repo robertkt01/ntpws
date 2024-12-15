@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Primjer HTML5 dokumenta.">
+    <meta name="keywords" content="HTML5, dijakritički znakovi, meta oznake, mobilni uređaji">
+    <meta name="author" content="Robert">
+    <title>Galerija</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #004080;
+            text-align: center;
+            color: white;
+            padding: 10px 0;
+        }
+
+        header img {
+            width: 100%;
+            height: auto;
+            max-height: 400px; /* Ograničenje visine slike */
+        }
+
+        nav {
+            background-color: #0074D9;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery figure {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .gallery figcaption {
+            background-color: #f9f9f9;
+            padding: 10px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        footer a {
+            color: #0074D9;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+            margin: 0 5px;
+            vertical-align: middle;
+        }
+
+        article {
+            margin-bottom: 20px;
+        }
+
+        h1, h2 {
+            color: #004080;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        figure {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        figure img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ccc;
+        }
+
+        figcaption {
+            font-style: italic;
+            color: #555;
+            margin-top: 5px;
+        }
+
+        @media (max-width: 768px) {
+            nav a {
+                font-size: 16px;
+                margin: 0 10px;
+            }
+
+            main {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="banner.jpg" alt="Zaglavlje stranice">
+    </header>
+    <nav>
+        <a href="#pocetna">Početna stranica</a>
+        <a href="news.html">Novosti</a>
+        <a href="contact.html">Kontakt</a>
+        <a href="#o-nama">O nama</a>
+        <a href="#galerija">Galerija</a>
+    </nav>
+    <main>
+        <h1>Galerija</h1>
+        <div class="gallery">
+            <figure>
+                <a href="images/tiger.webp" target="_blank">
+                    <img src="images/tiger.webp" alt="Tigar u šumi">
+                </a>
+                <figcaption>Tigar u šumi</figcaption>
+            </figure>
+            <figure>
+                <a href="images/lion.webp" target="_blank">
+                    <img src="images/lion.webp" alt="Lav na savani">
+                </a>
+                <figcaption>Lav na savani</figcaption>
+            </figure>
+            <figure>
+                <a href="images/elephant.jpeg" target="_blank">
+                    <img src="images/elephant.jpeg" alt="Slon u prirodnom staništu">
+                </a>
+                <figcaption>Slon u prirodnom staništu</figcaption>
+            </figure>
+            <figure>
+                <a href="images/cheetah.webp" target="_blank">
+                    <img src="images/cheetah.webp" alt="Gepard u trku">
+                </a>
+                <figcaption>Gepard u trku</figcaption>
+            </figure>
+            <figure>
+                <a href="images/giraffe.jpg" target="_blank">
+                    <img src="images/giraffe.jpg" alt="Žirafa na livadi">
+                </a>
+                <figcaption>Žirafa na livadi</figcaption>
+            </figure>
+            <figure>
+                <a href="images/zebra.jpeg" target="_blank">
+                    <img src="images/zebra.jpeg" alt="Zebre u čoporu">
+                </a>
+                <figcaption>Zebre u čoporu</figcaption>
+            </figure>
+            <figure>
+                <a href="images/panda.webp" target="_blank">
+                    <img src="images/panda.webp" alt="Panda u bambusovoj šumi">
+                </a>
+                <figcaption>Panda u bambusovoj šumi</figcaption>
+            </figure>
+            <figure>
+                <a href="images/kangaroo.jpg" target="_blank">
+                    <img src="images/kangaroo.jpg" alt="Klokan u skoku">
+                </a>
+                <figcaption>Klokan u skoku</figcaption>
+            </figure>
+            <figure>
+                <a href="images/koala.jpg" target="_blank">
+                    <img src="images/koala.jpg" alt="Koala na stablu">
+                </a>
+                <figcaption>Koala na stablu</figcaption>
+            </figure>
+            <figure>
+                <a href="images/fox.jpeg" target="_blank">
+                    <img src="images/fox.jpeg" alt="Lisica u snijegu">
+                </a>
+                <figcaption>Lisica u snijegu</figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="https://www.linkedin.com" target="_blank"><img src="linkedin-icon.png" alt="Twitter"></a>
+        </div>
+        <div>
+            <p style="text-center">Copyright © 2024 Robert.</p>
+            <a href="https://www.github.com/robertkt01"><img src="github-icon.png" alt="GitHub" style="width: 20px; height: 20px; vertical-align: middle;"></a>
+        </div>
+    </footer>
+</body>
+</html>
