@@ -72,6 +72,9 @@ print '</nav>
 	# Articles
 	else if ($menu == 12) { include("articles.php"); }
 	
+	# Random duck
+	else if ($menu == 13) { include("random_duck.php"); }
+	
 	print '
 	</main>';
 	if (!empty($_SESSION['news_title_1']) || !empty($_SESSION['news_title_2']) || !empty($_SESSION['news_title_3'])) {
